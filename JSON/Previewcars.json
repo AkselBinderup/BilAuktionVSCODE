@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Tesla Model S",
+        "price": "$80,000",
+        "year": "2023",
+        "imageUrl": "../Images/Tesla-Model-S.png"
+    },
+    {
+        "name": "Ford Mustang",
+        "price": "$55,000",
+        "year": "2022",
+        "imageUrl": "../Images/Ford-Mustang.png"
+    },
+    {
+        "name": "Chevrolet Camaro",
+        "price": "$50,000",
+        "year": "2021",
+        "imageUrl": "../Images/Chevrolet-Camaro.png"
+    }
+]
