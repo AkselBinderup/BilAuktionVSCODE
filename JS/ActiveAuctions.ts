@@ -4,8 +4,6 @@ interface Car{
     year: string;
     imageUrl: string;
 }
-import cars  from '..//Json//Previewcars.json';
-
 
 function createCarCard(car: Car): HTMLElement {
     const carCard = document.createElement('div');
@@ -54,22 +52,51 @@ function addCar(): void{
     }
 
     const carCard = createCarCard(newCar);
-    carList.appendChild(carCard);
 
+    carList.appendChild(carCard);
+   
     const addCarButton = document.getElementById('add-car-button');
     if(addCarButton){
         addCarButton.addEventListener('click', addCar);
     }
 }
 
+
 function loadPresetCars(): void {
     const carList = document.getElementById('car-list');
-    if (!carList) return;
+    if (!carList) {
+        console.log('Car list element not found');
+        return;
+    }
+
+    console.log('Loading preset cars');
+
+    const cars: Car[] = [
+        {
+            name: "Tesla Model S",
+            price: "$80,000",
+            year: "2023",
+            imageUrl: "../images/Tesla-Model-S.jpg"
+        },
+        {
+            name: "Ford Mustang",
+            price: "$55,000",
+            year: "2022",
+            imageUrl: "../images/Ford-Mustang.jpg"
+        },
+        {
+            name: "Chevrolet Camaro",
+            price: "$50,000",
+            year: "2021",
+            imageUrl: "../images/Chevrolet-Camaro.jpg"
+        }
+    ];
 
     cars.forEach((car) => {
         const carCard = createCarCard(car);
         carList.appendChild(carCard);
     });
 }
-
-loadPresetCars();
+document.addEventListener('DOMContentLoaded', () => {
+    loadPresetCars();
+});

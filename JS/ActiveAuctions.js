@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Previewcars_json_1 = require("..//Json//Previewcars.json");
 function createCarCard(car) {
     var carCard = document.createElement('div');
     carCard.classList.add('car-card');
@@ -46,11 +43,36 @@ function addCar() {
 }
 function loadPresetCars() {
     var carList = document.getElementById('car-list');
-    if (!carList)
+    if (!carList) {
+        console.log('Car list element not found');
         return;
-    Previewcars_json_1.default.forEach(function (car) {
+    }
+    console.log('Loading preset cars');
+    var cars = [
+        {
+            name: "Tesla Model S",
+            price: "$80,000",
+            year: "2023",
+            imageUrl: "../images/Tesla-Model-S.jpg"
+        },
+        {
+            name: "Ford Mustang",
+            price: "$55,000",
+            year: "2022",
+            imageUrl: "../images/Ford-Mustang.jpg"
+        },
+        {
+            name: "Chevrolet Camaro",
+            price: "$50,000",
+            year: "2021",
+            imageUrl: "../images/Chevrolet-Camaro.jpg"
+        }
+    ];
+    cars.forEach(function (car) {
         var carCard = createCarCard(car);
         carList.appendChild(carCard);
     });
 }
-loadPresetCars();
+document.addEventListener('DOMContentLoaded', function () {
+    loadPresetCars();
+});
