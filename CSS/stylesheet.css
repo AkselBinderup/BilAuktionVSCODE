@@ -54,6 +54,32 @@ body {
     display: flex;
     gap: 10px;
 }
+.auth-buttons a {
+    display: inline-block;
+    padding: 5px 10px; /* Match the original button padding */
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.auth-buttons a.register {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+}
+
+.auth-buttons a.login {
+    background-color: black;
+    color: white;
+}
+
+.auth-buttons a:hover {
+    opacity: 0.9;
+}
 
 button {
     padding: 5px 10px;
