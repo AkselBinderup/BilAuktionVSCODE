@@ -9,7 +9,10 @@ a{
     color:white;
     text-decoration: none;
 }
-
+.nav-links .active {
+    font-weight: bold; 
+    text-decoration: underline;  
+}
 a:hover{
     text-decoration: underline;
     color:#ddd;
