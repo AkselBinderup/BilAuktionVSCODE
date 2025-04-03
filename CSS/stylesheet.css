@@ -5,6 +5,16 @@
     font-family: Arial, sans-serif;
 }
 
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#ddd;
+}
+
 body {
     background-color: #f5f5f5;
 }
@@ -137,8 +147,8 @@ button {
 .hero-section {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #333, #555);
-    color: white;
+    background: #f9f9f9; /* Light green to soft white */
+    color:black;
 }
 
 .hero-section h1 {
@@ -154,7 +164,7 @@ button {
 .hero-section button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ff6600;
+    background-color: #38644c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -162,7 +172,7 @@ button {
 }
 
 .hero-section button:hover {
-    background-color: #e65c00;
+    background-color: #45840f;
 }
 
 /* Features Section */
@@ -186,13 +196,14 @@ button {
 
 .feature {
     text-align: center;
-    max-width: 300px;
+    flex: 1 1 300px;
+    max-width: 400px;
 }
-
 .feature img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
 }
 
 .feature h3 {
@@ -205,12 +216,11 @@ button {
     color: #555;
 }
 
-/* Call-to-Action Section */
 .cta-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #333;
-    color: white;
+    background: #f9f9f9; 
+    color:black;
 }
 
 .cta-section h2 {
@@ -226,7 +236,7 @@ button {
 .cta-section button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ff6600;
+    background-color: #38644c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -234,5 +244,5 @@ button {
 }
 
 .cta-section button:hover {
-    background-color: #e65c00;
+    background-color: #45840f;
 }
