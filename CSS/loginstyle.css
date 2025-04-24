@@ -124,7 +124,7 @@ body {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #4caf50;
+    background-color: #38644c;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
@@ -160,4 +160,94 @@ body {
     font-size: 1.2rem;
     color: #666;
     line-height: 1.5;
+}
+
+
+.two-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: 2rem auto;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #38644c; /* Green border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-left,
+.section-right {
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-left:hover,
+.section-right:hover {
+    background-color: rgba(76, 175, 80, 0.1); /* Light green tint on hover */
+}
+
+.section-left.active,
+.section-right.active {
+    background-color: #38644c; /* Green background when clicked */
+    color: #ffffff; /* White text when active */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #38644c; /* Green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #38644c; /* Green font color */
+    margin-bottom: 0.5rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #38644c; /* Green border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.login-input::placeholder {
+    color: #38644c; /* Green placeholder text */
+    font-style: italic;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #38644c; /* Green background */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }

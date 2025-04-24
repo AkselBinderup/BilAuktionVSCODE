@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Auction</title>
-    <link rel="stylesheet" href="..\\CSS\\stylesheet.css">
-    <link rel="stylesheet" href="..\\CSS\\loginstyle.css">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/loginstyle.css">
 </head>
 <body>
     <div class="navbar">
@@ -13,22 +13,44 @@
             <div class="logo">AAA</div>
             <div class="subtitle">Aksels Auto Auktion</div>
         </div>
-
         <div class="nav-links">
             <a href="homepage.html"><span>Home</span></a>
             <a href="auctions.html"><span>Auctions</span></a>
-
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search">
         </div>
-
         <div class="auth-buttons">
             <a href="register.html" class="register">Register</a>
             <a href="login.html" class="login">Login</a>
         </div>
     </div>
-
-
+    <div class="title">
+        <h1>Log Ind</h1>
+    </div>
+    <div class="two-section-container">
+        <div class="section-left">
+            <p>Køber</p>
+        </div>
+        <div class="section-right">
+            <p>Sælger</p>
+        </div>
+    </div>
+    <div class="login-container" style="display: none;">
+        <div class="login-label">Brugernavn*</div>
+        <input type="text" class="login-input" placeholder="Brugernavn">
+        <div class="login-label">Password*</div>
+        <input type="password" class="login-input" placeholder="Password">
+        <button class="login-button">Log Ind</button>
+    </div>
+    <hr class="divider">
+    <div class="section">
+        <h2 class="section-title">Spørgsmål?</h2>
+        <p class="section-text">Har du ingen</p>
+        <p class="section-text">Køberkonto? Så opret en her!</p>
+        <p class="section-text">Vil du gerne sælge?</p>
+        <p class="section-text">Så opret en sælger konto her!</p>
+    </div>
+    <script src="../JS/login.js"></script>
 </body>
 </html>

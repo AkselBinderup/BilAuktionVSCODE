@@ -176,32 +176,38 @@ button {
 .hero-section {
     text-align: center;
     padding: 50px 20px;
-    background: #f9f9f9; /* Light green to soft white */
-    color:black;
+    background: linear-gradient(#38644c,70%, #f9f9f9); /* Smooth transition from navbar green to light background */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
 }
 
 .hero-section h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
+    color: white; /* Ensure text is readable on the gradient */
 }
 
 .hero-section p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: white; /* Ensure text is readable on the gradient */
 }
 
 .hero-section button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #38644c;
-    color: white;
+    background-color: white;
+    color: #38644c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 6rem;
 }
 
 .hero-section button:hover {
     background-color: #45840f;
+    color: white;
 }
 
 /* Features Section */
